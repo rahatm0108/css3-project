@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+  </head>
+  <style>
+
+div { 
+    border: 50px solid; 
+    padding:100px;
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(red, blue); /*This lets you display a smooth transitions between red and blue.*/
+    background-clip: padding-box;
+    text-align: center; 
+    font-size: 30px;
+}
+
+div:hover { /*when you put mouse on the div :*/
+     color: white; 
+     text-shadow: 2px 2px 4px black; /* Adds shadow to the text*/
+     background: linear-gradient(blue, red); /*switches the color scheme*/
+}
+
+
+
+h4 {
+    
+    transition: height .1s ease-in-out 0.5s; /*change the height of the h4 and ease in and out of that motion when hovered upon*/
+    color: white;
+    width: 70px;
+    height: 40px;
+    position: relative;
+    background-color: black;
+    animation-name: move;
+    animation-duration: 5s; /*complete animation within 5 seconds*/
+    animation-delay: 1s; /*stop for a second after each animation cycle*/
+    animation-iteration-count: infinite; /*let animation continue forever*/
+}
+
+
+h4:hover {
+    background: linear-gradient(blue, red); /* change color scheme of h4*/
+    transform: rotate(90deg);/*rotate the h4 90 degrees when hovered upon */
+    height:80px;/*change the height of the h4 from 40px to 80px when hovered upon*/
+
+}
+
+@keyframes move {
+    0%   {background-color: black; left:0px;} /*At start of animation let the box be black */
+    50%  {background-color: white; left:150px;}/*At the middle of animation let the box be gray */
+    100% {background-color: black; left:0px;}/*At end of animation let the box be white */
+}
+
+
+    
+      </style>
+  <body>
+  <div>
+      <p>RAHAT</p>
+      <h4>:)</h4>
+      
+      </div>
+      
+
+  </body>
+</html>
